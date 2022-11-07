@@ -104,7 +104,7 @@
         <div><img src="svg/f.svg" alt="f" /></div>
         <div><img src="svg/g.svg" alt="g" /></div>
       </section>
-      <section class="grid grid-cols-6 pb-10 text-2xl">
+      <section class="sticky top-0 grid grid-cols-6 pb-10 text-2xl">
         <p class="col-start-1 col-end-4 pt-32 pl-20">
           This display font was
           <span class="text-3xl text-red-600">created with inspiration</span>
@@ -126,7 +126,23 @@
           alt="kins display"
         />
       </section>
-      <div class="py-32">
+      <div class="sticky top-0 z-20 bg-white py-20">
+        <section
+          class="relative z-20 grid grid-cols-7 gap-4 border-b-[1px] border-t-[1px] border-black bg-white px-10 pt-20 pb-14"
+        >
+          <div><img src="svg/h.svg" alt="a" /></div>
+
+          <div><img src="svg/k.svg" alt="c" /></div>
+          <div><img class="h-[290px]" src="svg/l.svg" alt="g" /></div>
+          <div><img class="h-[250px]" src="svg/n.svg" alt="d" /></div>
+          <div><img src="svg/p.svg" alt="e" /></div>
+          <div><img src="svg/r.svg" alt="f" /></div>
+
+          <div><img src="svg/y.svg" alt="b" /></div>
+        </section>
+      </div>
+
+      <!-- <div class="py-32">
         <section
           class="flex flex-row place-content-evenly border-t-[1px] border-b-[1px] border-black py-10"
         >
@@ -139,8 +155,8 @@
           <img class="h-[200px]" src="svg/r.svg" alt="r" />
           <img class="h-[250px]" src="svg/y.svg" alt="r" />
         </section>
-      </div>
-      <section class="relative grid">
+      </div> -->
+      <section class="relative z-30 grid">
         <img class="" src="img/greypic2.jpg" alt="grey landscape" />
         <img
           class="absolute place-self-center px-10"
@@ -150,8 +166,18 @@
       </section>
     </main>
 
-    <footer class="py-10 text-lg font-light">
-      <p class="text-center">© Evelina Falander 2022</p>
+    <footer class="py-7">
+      <section class="relative grid">
+        <img
+          class="my-rotate absolute w-[70px] place-self-center border-l-[1px] border-r-[1px] border-black pt-6"
+          src="svg/kd-red.svg"
+          alt="logo"
+        />
+        <p class="absolute top-1/2 pl-5 text-lg font-light">Kins Display</p>
+        <p class="absolute top-1/2 justify-self-end pr-5 text-lg font-light">
+          © Evelina Falander
+        </p>
+      </section>
     </footer>
     <script type="module" src="./main.js"></script>
   </body>
