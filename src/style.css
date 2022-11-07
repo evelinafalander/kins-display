@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Noto Serif Display", serif;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.grid-item {
+  border: 0.5px solid;
+  padding: 5rem;
+}
+
+.k {
+  z-index: -1;
+  padding: 1rem;
+  grid-row: 2;
+}
+.i {
+  padding: 1rem;
+}
+.i img {
+  padding-left: 3.5rem;
+}
+.n img {
+  padding-left: 2rem;
+}
+
+.n {
+  padding: 1rem;
+}
+.s {
+  padding: 1rem;
+  grid-row: 3;
+  grid-column: 6;
+}
+.s img {
+  padding-right: 1rem;
+}
+.snow {
+  padding: 0;
+}
+
+/*BANNER*/
+
+.banner-inner {
+  animation: myBanner 20s linear infinite;
+  display: inline-block;
+  position: relative;
+}
+
+.banner-copy-before {
+  position: absolute;
+  right: calc(100% + 1em);
+}
+.banner-copy-after {
+  position: absolute;
+  left: calc(100% + 1em);
+}
+
+@keyframes myBanner {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 1em));
+  }
+}
+
+/*rotate animation */
+.my-rotate {
+  animation: rotate 4s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotatey(0deg);
+  }
+  to {
+    transform: rotatey(360deg);
+  }
+}
